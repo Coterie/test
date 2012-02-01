@@ -17,14 +17,11 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  aadapter: mysql2
-  database: depot 
-  encoding: utf8
-  pool: 5
-  username: root
-  password: passw0rd
-  timeout: 5000
-  socket: /var/run/mysqld/mysqld.sock
+  adapter: sqlite3 
+  database: db/test.sqlite3 
+  pool: 5 
+  timeout: 5000 
+
 
 production:
   adapter: mysql2
